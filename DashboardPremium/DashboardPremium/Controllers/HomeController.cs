@@ -26,5 +26,12 @@ namespace DashboardPremium.Controllers
 
             return View();
         }
+        public ActionResult Todo()
+        {
+            ViewBag.Message = "Your Todo page.";
+            int i = 5;
+
+            return View(i);
+        }
     }
 }

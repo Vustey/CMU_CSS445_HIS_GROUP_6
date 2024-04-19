@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Todo";
+}
+@model List<benefitPlans> // Or the data structure you're using
+
+<h1>Your Data</h1>
+
+@if (model != null && model.Any())
+{
+<table>
+    <thead>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in model)
+            {
+        <tr>
+            <td>@item.BENEFIT_PLANS_ID</td>
+            <td>@item.PLAN_NAME</td>
+            <td>@item.DEDUCTABLE</td>
+            <td>@item.PERCENTAGE_COPAY</td>
+
+        </tr>
+            }
+    </tbody>
+</table>
+}
+else
+{
+<p>No data available.</p>
+}
+
