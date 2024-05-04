@@ -1,0 +1,200 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 4 câu lệnh dưới là import Bootstrap 4 framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .home_button {
+            width: 500px;
+            height: 150px;
+            font-size: x-large;
+            color: white;
+        }
+
+        .div1 {
+            margin: auto;
+            height: 80%;
+            width: 95%;
+            background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(231, 218, 31) 35%);
+        }
+
+        .bg-blue-sky {
+            background-color: rgb(168, 217, 250);
+        }
+    </style>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="row">
+
+        <!-- Đây là phần bên trái -->
+
+        <!-- display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+        gap: 20px; -->
+
+        <div class="col-sm-2 pr-0 " style="background-color: #262626; 
+        color: #ffffff; 
+        height: 100vh;
+        ">
+
+            <!-- Phần trên -->
+            <div class="mt-4 d-flex align-items-center flex-column">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <h3>Dashboard Premium</h3>
+                        <input type="text" placeholder="Search for..." class="w-100">
+                        <button class="mt-2 w-100 btn" style="background-color: #404040; 
+                    text-align: left;
+                    color: #ffffff;
+                    ">Dashboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đường gạch ngang -->
+            <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+
+            <!-- Phần dưới -->
+            <div class="mt-4 d-flex align-items-center flex-column">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <p>Over view</p>
+                        <p>Arlert</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Đây là phần bên phải -->
+        <div class="col-sm-10 pl-0">
+            <div class="jumbotron h-100 d-flex flex-column">
+
+                <!-- phần trên -->
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex flex-column">
+                            <div class="container-fluid"></div>
+                            <button class="btn home_button bg-blue-sky">
+                                <h1>Over view</h1>
+                            </button>
+                            <button class="btn home_button mt-2 bg-blue-sky">
+                                <h1>Alert</h1>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="calendar-container">
+                            <div class="calendar">
+                                <div class="year-header">
+                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                                    <span class="year" id="label">2024</span>
+                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
+                                </div>
+                                <table class="days-table w-100">
+                                    <tbody>
+                                        <tr>
+                                            <td class="day">Sun</td>
+                                            <td class="day">Mon</td>
+                                            <td class="day">Tue</td>
+                                            <td class="day">Wed</td>
+                                            <td class="day">Thu</td>
+                                            <td class="day">Fri</td>
+                                            <td class="day">Sat</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="frame">
+                                    <table class="dates-table w-100">
+                                        <tbody class="tbody">
+                                            <tr class="table-row"></tr>
+                                            <tr class="table-row">
+                                                <td class="table-date nil"></td>
+                                                <td class="table-date">1</td>
+                                                <td class="table-date">2</td>
+                                                <td class="table-date">3</td>
+                                                <td class="table-date">4</td>
+                                                <td class="table-date">5</td>
+                                                <td class="table-date">6</td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <td class="table-date">7</td>
+                                                <td class="table-date">8</td>
+                                                <td class="table-date">9</td>
+                                                <td class="table-date">10</td>
+                                                <td class="table-date">11</td>
+                                                <td class="table-date">12</td>
+                                                <td class="table-date">13</td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <td class="table-date">14</td>
+                                                <td class="table-date">15</td>
+                                                <td class="table-date">16</td>
+                                                <td class="table-date">17</td>
+                                                <td class="table-date">18</td>
+                                                <td class="table-date">19</td>
+                                                <td class="table-date">20</td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <td class="table-date active-date">21</td>
+                                                <td class="table-date">22</td>
+                                                <td class="table-date">23</td>
+                                                <td class="table-date">24</td>
+                                                <td class="table-date">25</td>
+                                                <td class="table-date">26</td>
+                                                <td class="table-date">27</td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <td class="table-date">28</td>
+                                                <td class="table-date">29</td>
+                                                <td class="table-date">30</td>
+                                                <td class="table-date nil"></td>
+                                                <td class="table-date nil"></td>
+                                                <td class="table-date nil"></td>
+                                                <td class="table-date nil"></td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <td class="table-date nil"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Đường gạch ngang -->
+                <div class="divider bg-dark mt-3 bg-blue-sky" style="padding-top: 2px;"></div>
+
+                <!-- Phần dưới -->
+
+                <div class="div1 mt-2">
+                    <h1 style="display: inline-block; color: purple;margin: auto;">Dashboard Premium</h1>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
