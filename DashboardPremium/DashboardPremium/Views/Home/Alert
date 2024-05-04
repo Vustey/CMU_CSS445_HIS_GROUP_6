@@ -28,7 +28,6 @@
         .bg-blue-sky {
             background-color: rgb(168, 217, 250);
         }
-        
     </style>
     <title>Home Page</title>
 </head>
@@ -45,11 +44,10 @@
         <div class="col-sm-2 pr-0 " style="background-color: #262626; 
         color: #ffffff; 
         height: 100vh;
-        width: 200px;
         ">
 
             <!-- Phần trên -->
-            <div class="mt-4 d-flex align-items-center flex-column">
+            <div class="mt-4 d-flex flex-column align-items-center ">
                 <div class="container-fluid">
                     <div class="container-fluid">
                         <h3>Dashboard Premium</h3>
@@ -57,11 +55,10 @@
                         <button class="mt-2 w-100 btn" style="background-color: #404040; 
                     text-align: left;
                     color: #ffffff;
-
                     ">Dashboard</button>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
             <!-- Đường gạch ngang -->
             <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
