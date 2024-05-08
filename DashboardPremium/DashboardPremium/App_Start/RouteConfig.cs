@@ -19,7 +19,7 @@ namespace DashboardPremium
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 // ở đây sẽ gọi đến controller là Home và hành động sẽ là HomePageView| Mỗi controller thường sẽ trả về 1 view
-                defaults: new { controller = "Home", action = "HomePageView", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
                 // Sau dòng này sẽ chạy đến HomeController trong Controller
             );
         }

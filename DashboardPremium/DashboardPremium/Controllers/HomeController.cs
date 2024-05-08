@@ -16,7 +16,11 @@ namespace DashboardPremium.Controllers
             // Trả về trang có tên là HomePageView.cshtml
             return View();
         }
-
+        public ActionResult Index()
+        {
+            // Trả về trang có tên là HomePageView.cshtml
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
