@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\alert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\home\\alert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\alert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\home\\overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\homepageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\home\\homepageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\homepageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -58,8 +58,7 @@
               "RelativeToolTip": "DashboardPremium\\Views\\Home\\OverView.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T04:45:32.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T04:45:32.387Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "DashboardPremium\\Views\\Home\\Alert.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T04:44:53.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T04:44:53.714Z"
             },
             {
               "$type": "Document",
@@ -82,7 +80,7 @@
               "RelativeDocumentMoniker": "DashboardPremium\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "DashboardPremium\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAJAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwFoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-08T11:47:17.861Z",
               "EditorCaption": ""
@@ -97,8 +95,7 @@
               "RelativeToolTip": "DashboardPremium\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:56:17.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:56:17.094Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "DashboardPremium\\App_Start\\RouteConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:55:16.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:55:16.781Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "DashboardPremium\\Views\\Web.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-04T08:54:58.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:54:58.972Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "DashboardPremium\\Views\\Home\\HomePageView.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-04T08:52:39.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:52:39.145Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "DashboardPremium\\Views\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-04T08:42:57.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:42:57.131Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "DashboardPremium\\App_Start\\BundleConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:39:12.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T08:39:12.727Z"
             }
           ]
         }
