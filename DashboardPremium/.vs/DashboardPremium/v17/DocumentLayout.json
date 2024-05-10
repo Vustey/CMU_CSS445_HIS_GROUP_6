@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\home\\homepageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\alert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\alert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\homepageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\homepageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|d:\\intergration\\nhom6\\cmu_css445_his_group_6-1\\dashboardpremium\\dashboardpremium\\views\\home\\index.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\home\\index.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\dashboardpremium\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4AC732E3-612F-4DFC-BA8C-D3BFFADB196E}|DashboardPremium\\DashboardPremium.csproj|solutionrelative:dashboardpremium\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,76 +46,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OverView.cshtml",
+              "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\OverView.cshtml",
+              "RelativeDocumentMoniker": "DashboardPremium\\Views\\Home\\OverView.cshtml",
+              "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\OverView.cshtml",
+              "RelativeToolTip": "DashboardPremium\\Views\\Home\\OverView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-10T04:45:32.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "DashboardPremium\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "DashboardPremium\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Alert.cshtml",
+              "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\Alert.cshtml",
+              "RelativeDocumentMoniker": "DashboardPremium\\Views\\Home\\Alert.cshtml",
+              "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\Alert.cshtml",
+              "RelativeToolTip": "DashboardPremium\\Views\\Home\\Alert.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T11:52:54.567Z",
+              "WhenOpened": "2024-05-10T04:44:53.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "DashboardPremium\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "DashboardPremium\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T11:52:22.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DashboardPremium\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "DashboardPremium\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAA3AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-08T11:47:17.861Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "DashboardPremium\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Controllers\\HomeController.cs",
               "RelativeToolTip": "DashboardPremium\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T08:56:17.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "DashboardPremium\\App_Start\\RouteConfig.cs",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "DashboardPremium\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T08:55:16.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Web.config",
               "RelativeDocumentMoniker": "DashboardPremium\\Views\\Web.config",
@@ -123,17 +123,18 @@
               "RelativeToolTip": "DashboardPremium\\Views\\Web.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-04T08:54:58.972Z"
+              "WhenOpened": "2024-05-04T08:54:58.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "HomePageView.cshtml",
               "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\HomePageView.cshtml",
               "RelativeDocumentMoniker": "DashboardPremium\\Views\\Home\\HomePageView.cshtml",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\Home\\HomePageView.cshtml",
               "RelativeToolTip": "DashboardPremium\\Views\\Home\\HomePageView.cshtml",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAuwMMAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-04T08:52:39.145Z",
               "EditorCaption": ""
@@ -146,22 +147,23 @@
               "RelativeDocumentMoniker": "DashboardPremium\\Views\\_ViewStart.cshtml",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "DashboardPremium\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-04T08:42:57.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "DashboardPremium\\App_Start\\BundleConfig.cs",
               "ToolTip": "D:\\Intergration\\Nhom6\\CMU_CSS445_HIS_GROUP_6-1\\DashboardPremium\\DashboardPremium\\App_Start\\BundleConfig.cs",
               "RelativeToolTip": "DashboardPremium\\App_Start\\BundleConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:39:12.727Z"
+              "WhenOpened": "2024-05-04T08:39:12.727Z",
+              "EditorCaption": ""
             }
           ]
         }
