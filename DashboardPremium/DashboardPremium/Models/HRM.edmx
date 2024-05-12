@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BENEFIT_PLANS">
+          <Key>
+            <PropertyRef Name="BENEFIT_PLANS_ID" />
+          </Key>
+          <Property Name="BENEFIT_PLANS_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="PLAN_NAME" Type="nchar" MaxLength="10" />
+          <Property Name="DEDUCTABLE" Type="money" />
+          <Property Name="PERCENTAGE_COPAY" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="EMPLOYMENT">
+          <Key>
+            <PropertyRef Name="EMPLOYMENT_ID" />
+          </Key>
+          <Property Name="EMPLOYMENT_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="EMPLOYMENT_CODE" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPLOYMENT_STATUS" Type="nchar" MaxLength="10" />
+          <Property Name="HIRE_DATE_FOR_WORKING" Type="date" />
+          <Property Name="WORKERS_COMP_CODE" Type="nchar" MaxLength="10" />
+          <Property Name="TERMINATION_DATE" Type="date" />
+          <Property Name="REHIRE_DATE_FOR_WORKING" Type="date" />
+          <Property Name="LAST_REVIEW_DATE" Type="date" />
+          <Property Name="NUMBER_DAYS_REQUIREMENT_OF_WORKING_PER_MONTH" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="PERSONAL_ID" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="EMPLOYMENT_WORKING_TIME">
+          <Key>
+            <PropertyRef Name="EMPLOYMENT_WORKING_TIME_ID" />
+          </Key>
+          <Property Name="EMPLOYMENT_WORKING_TIME_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="EMPLOYMENT_ID" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="YEAR_WORKING" Type="date" />
+          <Property Name="MONTH_WORKING" Type="numeric" Precision="2" Scale="0" />
+          <Property Name="NUMBER_DAYS_ACTUAL_OF_WORKING_PER_MONTH" Type="numeric" Precision="2" Scale="0" />
+          <Property Name="TOTAL_NUMBER_VACATION_WORKING_DAYS_PER_MONTH" Type="numeric" Precision="2" Scale="0" />
+        </EntityType>
+        <EntityType Name="JOB_HISTORY">
+          <Key>
+            <PropertyRef Name="JOB_HISTORY_ID" />
+          </Key>
+          <Property Name="JOB_HISTORY_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="EMPLOYMENT_ID" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="DEPARTMENT" Type="nvarchar" MaxLength="250" />
+          <Property Name="DIVISION" Type="nvarchar" MaxLength="250" />
+          <Property Name="FROM_DATE" Type="date" />
+          <Property Name="THRU_DATE" Type="date" />
+          <Property Name="JOB_TITLE" Type="nvarchar" MaxLength="250" />
+          <Property Name="SUPERVISOR" Type="nvarchar" MaxLength="250" />
+          <Property Name="LOCATION" Type="nvarchar" MaxLength="250" />
+          <Property Name="TYPE_OF_WORK" Type="smallint" />
+        </EntityType>
+        <EntityType Name="PERSONAL">
+          <Key>
+            <PropertyRef Name="PERSONAL_ID" />
+          </Key>
+          <Property Name="PERSONAL_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CURRENT_FIRST_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="CURRENT_LAST_NAME" Type="nvarchar(max)" />
+          <Property Name="CURRENT_MIDDLE_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="BIRTH_DATE" Type="date" />
+          <Property Name="SOCIAL_SECURITY_NUMBER" Type="nvarchar" MaxLength="20" />
+          <Property Name="DRIVERS_LICENSE" Type="nvarchar" MaxLength="50" />
+          <Property Name="CURRENT_ADDRESS_1" Type="nvarchar" MaxLength="255" />
+          <Property Name="CURRENT_ADDRESS_2" Type="nvarchar" MaxLength="255" />
+          <Property Name="CURRENT_CITY" Type="nvarchar" MaxLength="100" />
+          <Property Name="CURRENT_COUNTRY" Type="nvarchar" MaxLength="100" />
+          <Property Name="CURRENT_ZIP" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="CURRENT_GENDER" Type="nvarchar" MaxLength="20" />
+          <Property Name="CURRENT_PHONE_NUMBER" Type="nvarchar" MaxLength="15" />
+          <Property Name="CURRENT_PERSONAL_EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="CURRENT_MARITAL_STATUS" Type="nvarchar" MaxLength="50" />
+          <Property Name="ETHNICITY" Type="nchar" MaxLength="10" />
+          <Property Name="SHAREHOLDER_STATUS" Type="smallint" />
+          <Property Name="BENEFIT_PLAN_ID" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_EMPLOYMENT_PERSONAL">
+          <End Role="PERSONAL" Type="Self.PERSONAL" Multiplicity="0..1" />
+          <End Role="EMPLOYMENT" Type="Self.EMPLOYMENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAL">
+              <PropertyRef Name="PERSONAL_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYMENT">
+              <PropertyRef Name="PERSONAL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT">
+          <End Role="EMPLOYMENT" Type="Self.EMPLOYMENT" Multiplicity="0..1" />
+          <End Role="EMPLOYMENT_WORKING_TIME" Type="Self.EMPLOYMENT_WORKING_TIME" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYMENT">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYMENT_WORKING_TIME">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JOB_HISTORY_EMPLOYMENT">
+          <End Role="EMPLOYMENT" Type="Self.EMPLOYMENT" Multiplicity="0..1" />
+          <End Role="JOB_HISTORY" Type="Self.JOB_HISTORY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYMENT">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Principal>
+            <Dependent Role="JOB_HISTORY">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAL_BENEFIT_PLANS">
+          <End Role="BENEFIT_PLANS" Type="Self.BENEFIT_PLANS" Multiplicity="0..1" />
+          <End Role="PERSONAL" Type="Self.PERSONAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BENEFIT_PLANS">
+              <PropertyRef Name="BENEFIT_PLANS_ID" />
+            </Principal>
+            <Dependent Role="PERSONAL">
+              <PropertyRef Name="BENEFIT_PLAN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HRMModelStoreContainer">
+          <EntitySet Name="BENEFIT_PLANS" EntityType="Self.BENEFIT_PLANS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMPLOYMENT" EntityType="Self.EMPLOYMENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMPLOYMENT_WORKING_TIME" EntityType="Self.EMPLOYMENT_WORKING_TIME" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JOB_HISTORY" EntityType="Self.JOB_HISTORY" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERSONAL" EntityType="Self.PERSONAL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_EMPLOYMENT_PERSONAL" Association="Self.FK_EMPLOYMENT_PERSONAL">
+            <End Role="PERSONAL" EntitySet="PERSONAL" />
+            <End Role="EMPLOYMENT" EntitySet="EMPLOYMENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT" Association="Self.FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT">
+            <End Role="EMPLOYMENT" EntitySet="EMPLOYMENT" />
+            <End Role="EMPLOYMENT_WORKING_TIME" EntitySet="EMPLOYMENT_WORKING_TIME" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JOB_HISTORY_EMPLOYMENT" Association="Self.FK_JOB_HISTORY_EMPLOYMENT">
+            <End Role="EMPLOYMENT" EntitySet="EMPLOYMENT" />
+            <End Role="JOB_HISTORY" EntitySet="JOB_HISTORY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAL_BENEFIT_PLANS" Association="Self.FK_PERSONAL_BENEFIT_PLANS">
+            <End Role="BENEFIT_PLANS" EntitySet="BENEFIT_PLANS" />
+            <End Role="PERSONAL" EntitySet="PERSONAL" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BENEFIT_PLANS">
+          <Key>
+            <PropertyRef Name="BENEFIT_PLANS_ID" />
+          </Key>
+          <Property Name="BENEFIT_PLANS_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="PLAN_NAME" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="DEDUCTABLE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PERCENTAGE_COPAY" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="PERSONAL" Relationship="Self.FK_PERSONAL_BENEFIT_PLANS" FromRole="BENEFIT_PLANS" ToRole="PERSONAL" />
+        </EntityType>
+        <EntityType Name="EMPLOYMENT">
+          <Key>
+            <PropertyRef Name="EMPLOYMENT_ID" />
+          </Key>
+          <Property Name="EMPLOYMENT_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="EMPLOYMENT_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYMENT_STATUS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="HIRE_DATE_FOR_WORKING" Type="DateTime" Precision="0" />
+          <Property Name="WORKERS_COMP_CODE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="TERMINATION_DATE" Type="DateTime" Precision="0" />
+          <Property Name="REHIRE_DATE_FOR_WORKING" Type="DateTime" Precision="0" />
+          <Property Name="LAST_REVIEW_DATE" Type="DateTime" Precision="0" />
+          <Property Name="NUMBER_DAYS_REQUIREMENT_OF_WORKING_PER_MONTH" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PERSONAL_ID" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="PERSONAL" Relationship="Self.FK_EMPLOYMENT_PERSONAL" FromRole="EMPLOYMENT" ToRole="PERSONAL" />
+          <NavigationProperty Name="EMPLOYMENT_WORKING_TIME" Relationship="Self.FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT" FromRole="EMPLOYMENT" ToRole="EMPLOYMENT_WORKING_TIME" />
+          <NavigationProperty Name="JOB_HISTORY" Relationship="Self.FK_JOB_HISTORY_EMPLOYMENT" FromRole="EMPLOYMENT" ToRole="JOB_HISTORY" />
+        </EntityType>
+        <EntityType Name="EMPLOYMENT_WORKING_TIME">
+          <Key>
+            <PropertyRef Name="EMPLOYMENT_WORKING_TIME_ID" />
+          </Key>
+          <Property Name="EMPLOYMENT_WORKING_TIME_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="EMPLOYMENT_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="YEAR_WORKING" Type="DateTime" Precision="0" />
+          <Property Name="MONTH_WORKING" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="NUMBER_DAYS_ACTUAL_OF_WORKING_PER_MONTH" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="TOTAL_NUMBER_VACATION_WORKING_DAYS_PER_MONTH" Type="Decimal" Precision="2" Scale="0" />
+          <NavigationProperty Name="EMPLOYMENT" Relationship="Self.FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT" FromRole="EMPLOYMENT_WORKING_TIME" ToRole="EMPLOYMENT" />
+        </EntityType>
+        <EntityType Name="JOB_HISTORY">
+          <Key>
+            <PropertyRef Name="JOB_HISTORY_ID" />
+          </Key>
+          <Property Name="JOB_HISTORY_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="EMPLOYMENT_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DEPARTMENT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DIVISION" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="FROM_DATE" Type="DateTime" Precision="0" />
+          <Property Name="THRU_DATE" Type="DateTime" Precision="0" />
+          <Property Name="JOB_TITLE" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SUPERVISOR" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LOCATION" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE_OF_WORK" Type="Int16" />
+          <NavigationProperty Name="EMPLOYMENT" Relationship="Self.FK_JOB_HISTORY_EMPLOYMENT" FromRole="JOB_HISTORY" ToRole="EMPLOYMENT" />
+        </EntityType>
+        <EntityType Name="PERSONAL">
+          <Key>
+            <PropertyRef Name="PERSONAL_ID" />
+          </Key>
+          <Property Name="PERSONAL_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CURRENT_FIRST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_LAST_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_MIDDLE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BIRTH_DATE" Type="DateTime" Precision="0" />
+          <Property Name="SOCIAL_SECURITY_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DRIVERS_LICENSE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_ADDRESS_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_ADDRESS_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_CITY" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_COUNTRY" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_ZIP" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CURRENT_GENDER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_PHONE_NUMBER" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_PERSONAL_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_MARITAL_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ETHNICITY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="SHAREHOLDER_STATUS" Type="Int16" />
+          <Property Name="BENEFIT_PLAN_ID" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="BENEFIT_PLANS" Relationship="Self.FK_PERSONAL_BENEFIT_PLANS" FromRole="PERSONAL" ToRole="BENEFIT_PLANS" />
+          <NavigationProperty Name="EMPLOYMENT" Relationship="Self.FK_EMPLOYMENT_PERSONAL" FromRole="PERSONAL" ToRole="EMPLOYMENT" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_PERSONAL_BENEFIT_PLANS">
+          <End Role="BENEFIT_PLANS" Type="Self.BENEFIT_PLANS" Multiplicity="0..1" />
+          <End Role="PERSONAL" Type="Self.PERSONAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BENEFIT_PLANS">
+              <PropertyRef Name="BENEFIT_PLANS_ID" />
+            </Principal>
+            <Dependent Role="PERSONAL">
+              <PropertyRef Name="BENEFIT_PLAN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EMPLOYMENT_PERSONAL">
+          <End Role="PERSONAL" Type="Self.PERSONAL" Multiplicity="0..1" />
+          <End Role="EMPLOYMENT" Type="Self.EMPLOYMENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAL">
+              <PropertyRef Name="PERSONAL_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYMENT">
+              <PropertyRef Name="PERSONAL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT">
+          <End Role="EMPLOYMENT" Type="Self.EMPLOYMENT" Multiplicity="0..1" />
+          <End Role="EMPLOYMENT_WORKING_TIME" Type="Self.EMPLOYMENT_WORKING_TIME" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYMENT">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYMENT_WORKING_TIME">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JOB_HISTORY_EMPLOYMENT">
+          <End Role="EMPLOYMENT" Type="Self.EMPLOYMENT" Multiplicity="0..1" />
+          <End Role="JOB_HISTORY" Type="Self.JOB_HISTORY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYMENT">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Principal>
+            <Dependent Role="JOB_HISTORY">
+              <PropertyRef Name="EMPLOYMENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HRMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BENEFIT_PLANS" EntityType="Self.BENEFIT_PLANS" />
+          <EntitySet Name="EMPLOYMENT" EntityType="Self.EMPLOYMENT" />
+          <EntitySet Name="EMPLOYMENT_WORKING_TIME" EntityType="Self.EMPLOYMENT_WORKING_TIME" />
+          <EntitySet Name="JOB_HISTORY" EntityType="Self.JOB_HISTORY" />
+          <EntitySet Name="PERSONAL" EntityType="Self.PERSONAL" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <AssociationSet Name="FK_PERSONAL_BENEFIT_PLANS" Association="Self.FK_PERSONAL_BENEFIT_PLANS">
+            <End Role="BENEFIT_PLANS" EntitySet="BENEFIT_PLANS" />
+            <End Role="PERSONAL" EntitySet="PERSONAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EMPLOYMENT_PERSONAL" Association="Self.FK_EMPLOYMENT_PERSONAL">
+            <End Role="PERSONAL" EntitySet="PERSONAL" />
+            <End Role="EMPLOYMENT" EntitySet="EMPLOYMENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT" Association="Self.FK_EMPLOYMENT_WORKING_TIME_EMPLOYMENT">
+            <End Role="EMPLOYMENT" EntitySet="EMPLOYMENT" />
+            <End Role="EMPLOYMENT_WORKING_TIME" EntitySet="EMPLOYMENT_WORKING_TIME" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JOB_HISTORY_EMPLOYMENT" Association="Self.FK_JOB_HISTORY_EMPLOYMENT">
+            <End Role="EMPLOYMENT" EntitySet="EMPLOYMENT" />
+            <End Role="JOB_HISTORY" EntitySet="JOB_HISTORY" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HRMModelStoreContainer" CdmEntityContainer="HRMEntities">
+          <EntitySetMapping Name="BENEFIT_PLANS">
+            <EntityTypeMapping TypeName="HRMModel.BENEFIT_PLANS">
+              <MappingFragment StoreEntitySet="BENEFIT_PLANS">
+                <ScalarProperty Name="BENEFIT_PLANS_ID" ColumnName="BENEFIT_PLANS_ID" />
+                <ScalarProperty Name="PLAN_NAME" ColumnName="PLAN_NAME" />
+                <ScalarProperty Name="DEDUCTABLE" ColumnName="DEDUCTABLE" />
+                <ScalarProperty Name="PERCENTAGE_COPAY" ColumnName="PERCENTAGE_COPAY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLOYMENT">
+            <EntityTypeMapping TypeName="HRMModel.EMPLOYMENT">
+              <MappingFragment StoreEntitySet="EMPLOYMENT">
+                <ScalarProperty Name="EMPLOYMENT_ID" ColumnName="EMPLOYMENT_ID" />
+                <ScalarProperty Name="EMPLOYMENT_CODE" ColumnName="EMPLOYMENT_CODE" />
+                <ScalarProperty Name="EMPLOYMENT_STATUS" ColumnName="EMPLOYMENT_STATUS" />
+                <ScalarProperty Name="HIRE_DATE_FOR_WORKING" ColumnName="HIRE_DATE_FOR_WORKING" />
+                <ScalarProperty Name="WORKERS_COMP_CODE" ColumnName="WORKERS_COMP_CODE" />
+                <ScalarProperty Name="TERMINATION_DATE" ColumnName="TERMINATION_DATE" />
+                <ScalarProperty Name="REHIRE_DATE_FOR_WORKING" ColumnName="REHIRE_DATE_FOR_WORKING" />
+                <ScalarProperty Name="LAST_REVIEW_DATE" ColumnName="LAST_REVIEW_DATE" />
+                <ScalarProperty Name="NUMBER_DAYS_REQUIREMENT_OF_WORKING_PER_MONTH" ColumnName="NUMBER_DAYS_REQUIREMENT_OF_WORKING_PER_MONTH" />
+                <ScalarProperty Name="PERSONAL_ID" ColumnName="PERSONAL_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLOYMENT_WORKING_TIME">
+            <EntityTypeMapping TypeName="HRMModel.EMPLOYMENT_WORKING_TIME">
+              <MappingFragment StoreEntitySet="EMPLOYMENT_WORKING_TIME">
+                <ScalarProperty Name="EMPLOYMENT_WORKING_TIME_ID" ColumnName="EMPLOYMENT_WORKING_TIME_ID" />
+                <ScalarProperty Name="EMPLOYMENT_ID" ColumnName="EMPLOYMENT_ID" />
+                <ScalarProperty Name="YEAR_WORKING" ColumnName="YEAR_WORKING" />
+                <ScalarProperty Name="MONTH_WORKING" ColumnName="MONTH_WORKING" />
+                <ScalarProperty Name="NUMBER_DAYS_ACTUAL_OF_WORKING_PER_MONTH" ColumnName="NUMBER_DAYS_ACTUAL_OF_WORKING_PER_MONTH" />
+                <ScalarProperty Name="TOTAL_NUMBER_VACATION_WORKING_DAYS_PER_MONTH" ColumnName="TOTAL_NUMBER_VACATION_WORKING_DAYS_PER_MONTH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JOB_HISTORY">
+            <EntityTypeMapping TypeName="HRMModel.JOB_HISTORY">
+              <MappingFragment StoreEntitySet="JOB_HISTORY">
+                <ScalarProperty Name="JOB_HISTORY_ID" ColumnName="JOB_HISTORY_ID" />
+                <ScalarProperty Name="EMPLOYMENT_ID" ColumnName="EMPLOYMENT_ID" />
+                <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+                <ScalarProperty Name="DIVISION" ColumnName="DIVISION" />
+                <ScalarProperty Name="FROM_DATE" ColumnName="FROM_DATE" />
+                <ScalarProperty Name="THRU_DATE" ColumnName="THRU_DATE" />
+                <ScalarProperty Name="JOB_TITLE" ColumnName="JOB_TITLE" />
+                <ScalarProperty Name="SUPERVISOR" ColumnName="SUPERVISOR" />
+                <ScalarProperty Name="LOCATION" ColumnName="LOCATION" />
+                <ScalarProperty Name="TYPE_OF_WORK" ColumnName="TYPE_OF_WORK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERSONAL">
+            <EntityTypeMapping TypeName="HRMModel.PERSONAL">
+              <MappingFragment StoreEntitySet="PERSONAL">
+                <ScalarProperty Name="PERSONAL_ID" ColumnName="PERSONAL_ID" />
+                <ScalarProperty Name="CURRENT_FIRST_NAME" ColumnName="CURRENT_FIRST_NAME" />
+                <ScalarProperty Name="CURRENT_LAST_NAME" ColumnName="CURRENT_LAST_NAME" />
+                <ScalarProperty Name="CURRENT_MIDDLE_NAME" ColumnName="CURRENT_MIDDLE_NAME" />
+                <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+                <ScalarProperty Name="SOCIAL_SECURITY_NUMBER" ColumnName="SOCIAL_SECURITY_NUMBER" />
+                <ScalarProperty Name="DRIVERS_LICENSE" ColumnName="DRIVERS_LICENSE" />
+                <ScalarProperty Name="CURRENT_ADDRESS_1" ColumnName="CURRENT_ADDRESS_1" />
+                <ScalarProperty Name="CURRENT_ADDRESS_2" ColumnName="CURRENT_ADDRESS_2" />
+                <ScalarProperty Name="CURRENT_CITY" ColumnName="CURRENT_CITY" />
+                <ScalarProperty Name="CURRENT_COUNTRY" ColumnName="CURRENT_COUNTRY" />
+                <ScalarProperty Name="CURRENT_ZIP" ColumnName="CURRENT_ZIP" />
+                <ScalarProperty Name="CURRENT_GENDER" ColumnName="CURRENT_GENDER" />
+                <ScalarProperty Name="CURRENT_PHONE_NUMBER" ColumnName="CURRENT_PHONE_NUMBER" />
+                <ScalarProperty Name="CURRENT_PERSONAL_EMAIL" ColumnName="CURRENT_PERSONAL_EMAIL" />
+                <ScalarProperty Name="CURRENT_MARITAL_STATUS" ColumnName="CURRENT_MARITAL_STATUS" />
+                <ScalarProperty Name="ETHNICITY" ColumnName="ETHNICITY" />
+                <ScalarProperty Name="SHAREHOLDER_STATUS" ColumnName="SHAREHOLDER_STATUS" />
+                <ScalarProperty Name="BENEFIT_PLAN_ID" ColumnName="BENEFIT_PLAN_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="HRMModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
