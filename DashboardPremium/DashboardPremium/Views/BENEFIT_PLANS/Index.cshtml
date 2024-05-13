@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DashboardPremium.Models.BENEFIT_PLANS>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PLAN_NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DEDUCTABLE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PERCENTAGE_COPAY)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PLAN_NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DEDUCTABLE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PERCENTAGE_COPAY)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.BENEFIT_PLANS_ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.BENEFIT_PLANS_ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.BENEFIT_PLANS_ID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

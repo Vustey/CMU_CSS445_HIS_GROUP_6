@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vu tran\\Desktop\\DashBoard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C6C990-6AB9-4742-86E6-577F5A16888C}|DashBoard\\DashBoard.csproj|c:\\users\\vu tran\\desktop\\dashboard\\dashboard\\controllers\\payratescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C6C990-6AB9-4742-86E6-577F5A16888C}|DashBoard\\DashBoard.csproj|solutionrelative:dashboard\\controllers\\payratescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C6C990-6AB9-4742-86E6-577F5A16888C}|DashBoard\\DashBoard.csproj|c:\\users\\vu tran\\desktop\\dashboard\\dashboard\\data\\sqlserverdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C6C990-6AB9-4742-86E6-577F5A16888C}|DashBoard\\DashBoard.csproj|solutionrelative:dashboard\\data\\sqlserverdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 173,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SqlServerDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vu tran\\Desktop\\DashBoard\\DashBoard\\Data\\SqlServerDbContext.cs",
+              "RelativeDocumentMoniker": "DashBoard\\Data\\SqlServerDbContext.cs",
+              "ToolTip": "C:\\Users\\vu tran\\Desktop\\DashBoard\\DashBoard\\Data\\SqlServerDbContext.cs",
+              "RelativeToolTip": "DashBoard\\Data\\SqlServerDbContext.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:56:28.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PayratesController.cs",
+              "DocumentMoniker": "C:\\Users\\vu tran\\Desktop\\DashBoard\\DashBoard\\Controllers\\PayratesController.cs",
+              "RelativeDocumentMoniker": "DashBoard\\Controllers\\PayratesController.cs",
+              "ToolTip": "C:\\Users\\vu tran\\Desktop\\DashBoard\\DashBoard\\Controllers\\PayratesController.cs",
+              "RelativeToolTip": "DashBoard\\Controllers\\PayratesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:34:56.474Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

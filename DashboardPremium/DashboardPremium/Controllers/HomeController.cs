@@ -1,29 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace DashboardPremium.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        // Đầu tiên Route sẽ gọi đến hành động HomePageView
+        public ActionResult HomePageView()
+        {
+            // Trả về trang có tên là HomePageView.cshtml
+            return View();
+        }
+
+        public ActionResult Alert()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult OverView()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
