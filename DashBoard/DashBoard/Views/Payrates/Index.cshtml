@@ -1,0 +1,39 @@
+﻿@model List<DashBoard.Models.PayRate>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>Payrates List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Payrates" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus"></i>Create New Category</a>
+        </div>
+    </div>
+    <br /><br />
+    <table class="table table-bordered table-striped">
+        <thead>
+        <th>Payrates Name</th>
+        <th>PayAmount</th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdPayRates</td>
+                    <td>@item.PayRateName</td>
+                    <td>@item.TaxPercentage</td>
+                    <td>@item.Value</td>
+                    <td>@item.PayAmount</td>
+                    <td>@item.PtLevelC</td>
+                    @*                     <td>
+                <div>
+                <a class="btn btn-primary" asp-controller="Payrates" asp-action="Edit" asp-route-id=@item.idPayRates><i class="bi bi-pencil"></i></a>
+                <a class="btn btn-primary" asp-controller="Payrates" asp-action="Delete" asp-route-id=@item.idPayRates><i class="bi bi-trash3-fill"></i></a>
+                </div>
+                </td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

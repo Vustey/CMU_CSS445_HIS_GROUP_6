@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HRMModelStoreContainer" CdmEntityContainer="HRMEntities">
+    <EntitySetMapping Name="BENEFIT_PLANS">
+      <EntityTypeMapping TypeName="HRMModel.BENEFIT_PLANS">
+        <MappingFragment StoreEntitySet="BENEFIT_PLANS">
+          <ScalarProperty Name="BENEFIT_PLANS_ID" ColumnName="BENEFIT_PLANS_ID" />
+          <ScalarProperty Name="PLAN_NAME" ColumnName="PLAN_NAME" />
+          <ScalarProperty Name="DEDUCTABLE" ColumnName="DEDUCTABLE" />
+          <ScalarProperty Name="PERCENTAGE_COPAY" ColumnName="PERCENTAGE_COPAY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYMENT">
+      <EntityTypeMapping TypeName="HRMModel.EMPLOYMENT">
+        <MappingFragment StoreEntitySet="EMPLOYMENT">
+          <ScalarProperty Name="EMPLOYMENT_ID" ColumnName="EMPLOYMENT_ID" />
+          <ScalarProperty Name="EMPLOYMENT_CODE" ColumnName="EMPLOYMENT_CODE" />
+          <ScalarProperty Name="EMPLOYMENT_STATUS" ColumnName="EMPLOYMENT_STATUS" />
+          <ScalarProperty Name="HIRE_DATE_FOR_WORKING" ColumnName="HIRE_DATE_FOR_WORKING" />
+          <ScalarProperty Name="WORKERS_COMP_CODE" ColumnName="WORKERS_COMP_CODE" />
+          <ScalarProperty Name="TERMINATION_DATE" ColumnName="TERMINATION_DATE" />
+          <ScalarProperty Name="REHIRE_DATE_FOR_WORKING" ColumnName="REHIRE_DATE_FOR_WORKING" />
+          <ScalarProperty Name="LAST_REVIEW_DATE" ColumnName="LAST_REVIEW_DATE" />
+          <ScalarProperty Name="NUMBER_DAYS_REQUIREMENT_OF_WORKING_PER_MONTH" ColumnName="NUMBER_DAYS_REQUIREMENT_OF_WORKING_PER_MONTH" />
+          <ScalarProperty Name="PERSONAL_ID" ColumnName="PERSONAL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYMENT_WORKING_TIME">
+      <EntityTypeMapping TypeName="HRMModel.EMPLOYMENT_WORKING_TIME">
+        <MappingFragment StoreEntitySet="EMPLOYMENT_WORKING_TIME">
+          <ScalarProperty Name="EMPLOYMENT_WORKING_TIME_ID" ColumnName="EMPLOYMENT_WORKING_TIME_ID" />
+          <ScalarProperty Name="EMPLOYMENT_ID" ColumnName="EMPLOYMENT_ID" />
+          <ScalarProperty Name="YEAR_WORKING" ColumnName="YEAR_WORKING" />
+          <ScalarProperty Name="MONTH_WORKING" ColumnName="MONTH_WORKING" />
+          <ScalarProperty Name="NUMBER_DAYS_ACTUAL_OF_WORKING_PER_MONTH" ColumnName="NUMBER_DAYS_ACTUAL_OF_WORKING_PER_MONTH" />
+          <ScalarProperty Name="TOTAL_NUMBER_VACATION_WORKING_DAYS_PER_MONTH" ColumnName="TOTAL_NUMBER_VACATION_WORKING_DAYS_PER_MONTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JOB_HISTORY">
+      <EntityTypeMapping TypeName="HRMModel.JOB_HISTORY">
+        <MappingFragment StoreEntitySet="JOB_HISTORY">
+          <ScalarProperty Name="JOB_HISTORY_ID" ColumnName="JOB_HISTORY_ID" />
+          <ScalarProperty Name="EMPLOYMENT_ID" ColumnName="EMPLOYMENT_ID" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="DIVISION" ColumnName="DIVISION" />
+          <ScalarProperty Name="FROM_DATE" ColumnName="FROM_DATE" />
+          <ScalarProperty Name="THRU_DATE" ColumnName="THRU_DATE" />
+          <ScalarProperty Name="JOB_TITLE" ColumnName="JOB_TITLE" />
+          <ScalarProperty Name="SUPERVISOR" ColumnName="SUPERVISOR" />
+          <ScalarProperty Name="LOCATION" ColumnName="LOCATION" />
+          <ScalarProperty Name="TYPE_OF_WORK" ColumnName="TYPE_OF_WORK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONAL">
+      <EntityTypeMapping TypeName="HRMModel.PERSONAL">
+        <MappingFragment StoreEntitySet="PERSONAL">
+          <ScalarProperty Name="PERSONAL_ID" ColumnName="PERSONAL_ID" />
+          <ScalarProperty Name="CURRENT_FIRST_NAME" ColumnName="CURRENT_FIRST_NAME" />
+          <ScalarProperty Name="CURRENT_LAST_NAME" ColumnName="CURRENT_LAST_NAME" />
+          <ScalarProperty Name="CURRENT_MIDDLE_NAME" ColumnName="CURRENT_MIDDLE_NAME" />
+          <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+          <ScalarProperty Name="SOCIAL_SECURITY_NUMBER" ColumnName="SOCIAL_SECURITY_NUMBER" />
+          <ScalarProperty Name="DRIVERS_LICENSE" ColumnName="DRIVERS_LICENSE" />
+          <ScalarProperty Name="CURRENT_ADDRESS_1" ColumnName="CURRENT_ADDRESS_1" />
+          <ScalarProperty Name="CURRENT_ADDRESS_2" ColumnName="CURRENT_ADDRESS_2" />
+          <ScalarProperty Name="CURRENT_CITY" ColumnName="CURRENT_CITY" />
+          <ScalarProperty Name="CURRENT_COUNTRY" ColumnName="CURRENT_COUNTRY" />
+          <ScalarProperty Name="CURRENT_ZIP" ColumnName="CURRENT_ZIP" />
+          <ScalarProperty Name="CURRENT_GENDER" ColumnName="CURRENT_GENDER" />
+          <ScalarProperty Name="CURRENT_PHONE_NUMBER" ColumnName="CURRENT_PHONE_NUMBER" />
+          <ScalarProperty Name="CURRENT_PERSONAL_EMAIL" ColumnName="CURRENT_PERSONAL_EMAIL" />
+          <ScalarProperty Name="CURRENT_MARITAL_STATUS" ColumnName="CURRENT_MARITAL_STATUS" />
+          <ScalarProperty Name="ETHNICITY" ColumnName="ETHNICITY" />
+          <ScalarProperty Name="SHAREHOLDER_STATUS" ColumnName="SHAREHOLDER_STATUS" />
+          <ScalarProperty Name="BENEFIT_PLAN_ID" ColumnName="BENEFIT_PLAN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="HRMModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,42 +1,109 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- 4 câu lệnh dưới là import Bootstrap 4 framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .home_button {
+            width: 500px;
+            height: 150px;
+            font-size: x-large;
+            color: white;
+        }
+
+        .bg-blue-sky {
+            background-color: rgb(168, 217, 250);
+        }
+        .input-with-image {
+            background-image: url('..\\Content\\Image\\Search_Icon.png');
+            background-repeat: no-repeat;
+            background-position: 10px center; /* Vị trí của hình ảnh */
+            padding-left: 30px; /* Để cung cấp không gian cho hình ảnh và văn bản */
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .n_link{
+            text-decoration: none; /* Xóa gạch chân dưới */
+            color: inherit; /* Sử dụng màu chữ mặc định của thẻ mẹ */
+        }
+        .n_link:hover {
+            /* Xóa các thuộc tính hover */
+            /* Ví dụ: */
+            text-decoration: none; /* Xóa gạch chân dưới */
+            color: inherit; /* Sử dụng màu chữ mặc định của thẻ mẹ */            
+        }
+        </style>
+    <title>Home Page</title>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="row">
+
+        <!-- Đây là phần bên trái -->
+
+        <div class="col-md-2 pr-0 " 
+        style="background-color: #262626;
+        color: #ffffff;
+        height: 100vh;
+        ">
+
+            <!-- Phần trên -->
+            <div class="mt-4 d-flex align-items-center flex-column">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        @* Đây là tên và logo Dashboard *@
+                        <p class="pt-3 pb-3" style="font-size: 15px;">
+                            <img src="..\Content\Image\Dashboard_Logo.png" alt="">    
+                            Dashboard Premium
+                        </p>
+                        @* Đây là nút search *@
+                        <input type="text" placeholder="Search for..." class="w-100 input-with-image mb-3 rounded" style="height: 40px;">
+                        @* Đây là nút Dashboard *@
+                        <button 
+                        @* Câu lệnh onlick này là để biến cả button thành link *@
+                        onclick="location.href='@Url.Action("HomePageView", "Home")';" 
+                        class="mt-2 w-100 btn d-flex align-items-center" 
+                        style="background-color: #404040;
+                            text-align: left;
+                            color: #ffffff;
+                            font-size: 120%;
+                            ">
+                            <img src="..\Content\Image\Dashboard_Icon_Active.png" alt="" class="pr-1">
+                            Dashboard
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+
+            <!-- Đường gạch ngang -->
+            <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+
+            <!-- Phần dưới -->
+            <div class="mt-4 d-flex align-items-center flex-column">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <p class="n_link">@Html.ActionLink("Over view", "OverView", "Home", null, new { @class = "n_link" })</p>
+                        <p class="n_link">@Html.ActionLink("Alert", "Alert", "Home"       , null, new { @class = "n_link" })</p>
+                    </div>
+                </div>
             </div>
+
+
+        </div>
+
+
+        <!-- Đây là phần bên phải -->
+        <div class="col-md-10 pl-0">
+            
+        @RenderBody()
+
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
