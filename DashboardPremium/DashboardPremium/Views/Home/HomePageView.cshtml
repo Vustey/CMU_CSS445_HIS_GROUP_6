@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="jumbotron d-flex flex-column vh-100" style="margin-bottom: 0px">
+
+    <!-- phần trên -->
+    <div class="row">
+        <div class="col">
+            <div class="d-flex flex-column">
+                <div class="container-fluid"></div>
+                <button class="btn home_button bg-blue-sky shadow-sm">
+                    <h1>Over view</h1>
+                </button>
+                <button class="btn home_button mt-2 bg-blue-sky shadow-sm">
+                    <h1>Alert</h1>
+                </button>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="calendar-container">
+                <div class="calendar">
+                    <div class="year-header">
+                        <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                        <span class="year" id="label">2024</span>
+                        <span class="right-button fa fa-chevron-right" id="next"> </span>
+                    </div>
+                    <table class="days-table w-100">
+                        <tbody>
+                            <tr>
+                                <td class="day">Sun</td>
+                                <td class="day">Mon</td>
+                                <td class="day">Tue</td>
+                                <td class="day">Wed</td>
+                                <td class="day">Thu</td>
+                                <td class="day">Fri</td>
+                                <td class="day">Sat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="frame">
+                        <table class="dates-table w-100">
+                            <tbody class="tbody">
+                                <tr class="table-row"></tr>
+                                <tr class="table-row">
+                                    <td class="table-date nil"></td>
+                                    <td class="table-date">1</td>
+                                    <td class="table-date">2</td>
+                                    <td class="table-date">3</td>
+                                    <td class="table-date">4</td>
+                                    <td class="table-date">5</td>
+                                    <td class="table-date">6</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-date">7</td>
+                                    <td class="table-date">8</td>
+                                    <td class="table-date">9</td>
+                                    <td class="table-date">10</td>
+                                    <td class="table-date">11</td>
+                                    <td class="table-date">12</td>
+                                    <td class="table-date">13</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-date">14</td>
+                                    <td class="table-date">15</td>
+                                    <td class="table-date">16</td>
+                                    <td class="table-date">17</td>
+                                    <td class="table-date">18</td>
+                                    <td class="table-date">19</td>
+                                    <td class="table-date">20</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-date active-date">21</td>
+                                    <td class="table-date">22</td>
+                                    <td class="table-date">23</td>
+                                    <td class="table-date">24</td>
+                                    <td class="table-date">25</td>
+                                    <td class="table-date">26</td>
+                                    <td class="table-date">27</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-date">28</td>
+                                    <td class="table-date">29</td>
+                                    <td class="table-date">30</td>
+                                    <td class="table-date nil"></td>
+                                    <td class="table-date nil"></td>
+                                    <td class="table-date nil"></td>
+                                    <td class="table-date nil"></td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="table-date nil"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Đường gạch ngang -->
+    <div class="divider mt-3" style="padding-top: 2px; background-color: #959595;"></div>
+
+    <!-- Phần dưới -->
+
+    <div class="mt-3" style="overflow: hidden;">
+        <img class="img-fluid"
+             style="
+            margin: auto;
+            width: 100%;"
+             src="..\Content\Image\DashBoardPremiume.png" alt="">
+    </div>
+
+</div>
+
+
