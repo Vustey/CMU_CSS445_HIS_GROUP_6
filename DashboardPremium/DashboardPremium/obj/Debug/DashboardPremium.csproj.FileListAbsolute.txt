@@ -339,3 +339,7 @@ E:\University\DTU\System Integration Practices\CMU_CSS445_HIS_GROUP_6\DashboardP
 E:\University\DTU\System Integration Practices\CMU_CSS445_HIS_GROUP_6\DashboardPremium\DashboardPremium\obj\Debug\DashboardPremium.dll
 E:\University\DTU\System Integration Practices\CMU_CSS445_HIS_GROUP_6\DashboardPremium\DashboardPremium\obj\Debug\DashboardPremium.pdb
 >>>>>>> e5718c31231cd90387027011269cab76f45526ea
+D:\Intergration\Nhom6\CMU_CSS445_HIS_GROUP_6-1\DashboardPremium\DashboardPremium\bin\EntityFramework.dll
+D:\Intergration\Nhom6\CMU_CSS445_HIS_GROUP_6-1\DashboardPremium\DashboardPremium\bin\EntityFramework.SqlServer.dll
+D:\Intergration\Nhom6\CMU_CSS445_HIS_GROUP_6-1\DashboardPremium\DashboardPremium\bin\EntityFramework.xml
+D:\Intergration\Nhom6\CMU_CSS445_HIS_GROUP_6-1\DashboardPremium\DashboardPremium\bin\EntityFramework.SqlServer.xml
