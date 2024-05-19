@@ -17,12 +17,24 @@ namespace DashboardPremium.Controllers
             return View();
         }
 
+
+        // Alert
         public ActionResult Alert()
         {
             return View();
         }
 
-        public ActionResult OverView()
+
+        // Overview 
+        public ActionResult TotalEarning()
+        {
+            return View();
+        }
+        public ActionResult VacationDays()
+        {
+            return View();
+        }
+        public ActionResult AverageBenefit()
         {
             return View();
         }

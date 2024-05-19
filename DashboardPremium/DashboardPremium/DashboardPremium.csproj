@@ -216,7 +216,10 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\Image\DashBoardPremiume.png" />
     <Content Include="Content\Image\Dashboard_Icon.png" />
+    <Content Include="Content\Image\Dashboard_Icon_Active.png" />
+    <Content Include="Content\Image\Dashboard_Icon_Inactive.png" />
     <Content Include="Content\Image\Dashboard_Logo.png" />
+    <Content Include="Content\Image\Nav_background.png" />
     <Content Include="Content\Image\Search_Icon.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />

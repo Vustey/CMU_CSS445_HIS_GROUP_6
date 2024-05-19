@@ -43,14 +43,15 @@
     <title>Home Page</title>
 </head>
 <body>
-    <div class="row">
+    <div class="row w-100">
 
         <!-- Đây là phần bên trái -->
 
         <div class="col-md-2 pr-0 " 
-        style="background-color: #262626;
+        style="
+        background-color: #262626;
         color: #ffffff;
-        height: 100vh;
+        height: 100vh;     
         ">
 
             <!-- Phần trên -->
@@ -88,8 +89,10 @@
             <div class="mt-4 d-flex align-items-center flex-column">
                 <div class="container-fluid">
                     <div class="container-fluid">
-                        <p class="n_link">@Html.ActionLink("Over view", "OverView", "Home", null, new { @class = "n_link" })</p>
-                        <p class="n_link">@Html.ActionLink("Alert", "Alert", "Home"       , null, new { @class = "n_link" })</p>
+                        @* nút overview *@
+                        <p class="n_link">@Html.ActionLink("Over view", "TotalEarning", "Home", null, new { @class = "n_link" })</p>
+                        @* nút alert *@
+                        <p class="n_link">@Html.ActionLink("Alert", "Alert", "Home", null, new { @class = "n_link" })</p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,284 @@
 @{
-    ViewBag.Title = "Alert";
     Layout = "~/Views/Shared/_LayoutAlert.cshtml";
 }
-<h1>Alert.html</h1>
+    <table class="table table-hover">
+        @* Tiêu đề *@
+        <h1>Alert</h1>
+        @* Phần gạch ngang *@
+        <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+        @* Phần table *@
+        @* Phần tiêu đề của table*@
+        <thead>
+            <tr class="table-active">
+                <th class="ml-3 col-1">STT</th>
+                <th class="ml- col-11">Alert content</th>
+            </tr>
+        </thead>
+        @* phần nội dung của table *@
+
+        <tbody class="bg-white">
+            <tr data-toggle="modal" data-target="#HiringAnniversary">
+                <td class="ml-3">
+                    iconAlert
+                </td>
+                <td class="ml-3">
+                    Hiring Anniversary
+                </td>
+            </tr>
+            <tr data-toggle="modal" data-target="#VacationDays">
+                <td class="ml-3">
+                    iconAlert
+                </td>
+                <td class="ml-3">
+                    Vacation days
+                </td>
+            </tr>
+            <tr data-toggle="modal" data-target="#ChangeInPayroll">
+                <td class="ml-3">
+                    iconAlert
+                </td>
+                <td class="ml-3">
+                    Change in payroll
+                </td>
+            </tr>
+            <tr data-toggle="modal" data-target="#Birthdays">
+                <td class="ml-3">
+                    iconAlert
+                </td>
+                <td class="ml-3">
+                    Birthdays
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    @* Modal Hirring *@
+    <div class="modal fade" id="HiringAnniversary" tabindex="-1" role="dialog" aria-labelledby="HiringAnniversaryModelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="HiringAnniversaryModelLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                
+            <div class="container-fluid w-100 bg-white">
+                @* Tiêu đề *@
+                <h4>All Users (Average Benefit)</h4>
+                @* Phần gạch ngang *@
+                <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+                @* Phần table *@
+                <table class="table table-hover">
+                    @* Phần tiêu đề của table*@
+                    <thead>
+                    <tr class="table-active">
+                        <th class="text-center ml-3">Firstname</th>
+                        <th class="text-center ml-3">Lastname</th>
+                        <th class="text-center ml-3">Email</th>
+                    </tr>
+                    </thead>
+                    @* phần nội dung của table *@
+                    <tbody>
+                    @* Dòng 1 *@
+                    <tr>
+                        <td class="text-center ml-3">John</td>
+                        <td class="text-center ml-3">Doe</td>
+                        <td class="text-center ml-3">john@example.com</td>
+                    </tr>
+                    @* Dòng 2 *@
+                    <tr>
+                        <td class="text-center ml-3">Mary</td>
+                        <td class="text-center ml-3">Moe</td>
+                        <td class="text-center ml-3">mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center ml-3">July</td>
+                        <td class="text-center ml-3">Dooley</td>
+                        <td class="text-center ml-3">july@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+    @* Model Vacation *@
+    <div class="modal fade" id="VacationDays" tabindex="-1" role="dialog" aria-labelledby="VacationDaysModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="VacationDaysModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                
+            <div class="container-fluid w-100 bg-white">
+                @* Tiêu đề *@
+                <h4>All Users (Varcation)</h4>
+                @* Phần gạch ngang *@
+                <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+                @* Phần table *@
+                <table class="table table-hover">
+                    @* Phần tiêu đề của table*@
+                    <thead>
+                    <tr class="table-active">
+                        <th class="text-center ml-3">Firstname</th>
+                        <th class="text-center ml-3">Lastname</th>
+                        <th class="text-center ml-3">Email</th>
+                    </tr>
+                    </thead>
+                    @* phần nội dung của table *@
+                    <tbody>
+                    @* Dòng 1 *@
+                    <tr>
+                        <td class="text-center ml-3">John</td>
+                        <td class="text-center ml-3">Doe</td>
+                        <td class="text-center ml-3">john@example.com</td>
+                    </tr>
+                    @* Dòng 2 *@
+                    <tr>
+                        <td class="text-center ml-3">Mary</td>
+                        <td class="text-center ml-3">Moe</td>
+                        <td class="text-center ml-3">mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center ml-3">July</td>
+                        <td class="text-center ml-3">Dooley</td>
+                        <td class="text-center ml-3">july@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+    @* Model change in payroll *@
+    <div class="modal fade" id="ChangeInPayroll" tabindex="-1" role="dialog" aria-labelledby="ChangeInPayrollModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ChangeInPayrollModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                
+            <div class="container-fluid w-100 bg-white">
+                @* Tiêu đề *@
+                <h4>All Users (Change in payroll)</h4>
+                @* Phần gạch ngang *@
+                <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+                @* Phần table *@
+                <table class="table table-hover">
+                    @* Phần tiêu đề của table*@
+                    <thead>
+                    <tr class="table-active">
+                        <th class="text-center ml-3">Firstname</th>
+                        <th class="text-center ml-3">Lastname</th>
+                        <th class="text-center ml-3">Email</th>
+                    </tr>
+                    </thead>
+                    @* phần nội dung của table *@
+                    <tbody>
+                    @* Dòng 1 *@
+                    <tr>
+                        <td class="text-center ml-3">John</td>
+                        <td class="text-center ml-3">Doe</td>
+                        <td class="text-center ml-3">john@example.com</td>
+                    </tr>
+                    @* Dòng 2 *@
+                    <tr>
+                        <td class="text-center ml-3">Mary</td>
+                        <td class="text-center ml-3">Moe</td>
+                        <td class="text-center ml-3">mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center ml-3">July</td>
+                        <td class="text-center ml-3">Dooley</td>
+                        <td class="text-center ml-3">july@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Birthdays -->
+    <div class="modal fade" id="Birthdays" tabindex="-1" role="dialog" aria-labelledby="BirthdaysModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BirthdaysModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                
+            <div class="container-fluid w-100 bg-white">
+                @* Tiêu đề *@
+                <h4>All Users (Birthdays)</h4>
+                @* Phần gạch ngang *@
+                <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+                @* Phần table *@
+                <table class="table table-hover">
+                    @* Phần tiêu đề của table*@
+                    <thead>
+                    <tr class="table-active">
+                        <th class="text-center ml-3">Firstname</th>
+                        <th class="text-center ml-3">Lastname</th>
+                        <th class="text-center ml-3">Email</th>
+                    </tr>
+                    </thead>
+                    @* phần nội dung của table *@
+                    <tbody>
+                    @* Dòng 1 *@
+                    <tr>
+                        <td class="text-center ml-3">John</td>
+                        <td class="text-center ml-3">Doe</td>
+                        <td class="text-center ml-3">john@example.com</td>
+                    </tr>
+                    @* Dòng 2 *@
+                    <tr>
+                        <td class="text-center ml-3">Mary</td>
+                        <td class="text-center ml-3">Moe</td>
+                        <td class="text-center ml-3">mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center ml-3">July</td>
+                        <td class="text-center ml-3">Dooley</td>
+                        <td class="text-center ml-3">july@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+
+

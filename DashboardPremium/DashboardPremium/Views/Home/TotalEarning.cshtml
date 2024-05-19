@@ -1,0 +1,73 @@
+@{
+    Layout = "~/Views/Shared/_LayoutOverView.cshtml";
+}
+@* Phần filter *@
+                    <div class="row mb-5">
+                        <div class="container-fluid w-100 bg-white">
+                            <div class="row pt-4 pb-4 pr-3 pl-3 rounded-lg shadow">
+                                <div class="col">
+                                    <button class="btn border w-100 ">
+                                        Position
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn border w-100 ">
+                                        Ethnicity
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn border w-100 ">
+                                        Time Job
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn border w-100 ">
+                                        Department
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn border w-100 ">
+                                        Gender
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="container-fluid w-100 bg-white">
+    @* Tiêu đề *@
+    <h4>All Users (Total Earning)</h4>
+    @* Phần gạch ngang *@
+    <div class="divider bg-dark mt-3" style="padding-top: 2px;"></div>
+    @* Phần table *@
+    <table class="table table-hover">
+    @* Phần tiêu đề của table*@
+    <thead>
+      <tr class="table-active">
+        <th class="text-center ml-3">Firstname</th>
+        <th class="text-center ml-3">Lastname</th>
+        <th class="text-center ml-3">Email</th>
+      </tr>
+    </thead>
+    @* phần nội dung của table *@
+    <tbody>
+    @* Dòng 1 *@
+      <tr>
+        <td class="text-center ml-3">John</td>
+        <td class="text-center ml-3">Doe</td>
+        <td class="text-center ml-3">john@example.com</td>
+      </tr>
+    @* Dòng 2 *@
+      <tr>
+        <td class="text-center ml-3">Mary</td>
+        <td class="text-center ml-3">Moe</td>
+        <td class="text-center ml-3">mary@example.com</td>
+      </tr>
+      <tr>
+        <td class="text-center ml-3">July</td>
+        <td class="text-center ml-3">Dooley</td>
+        <td class="text-center ml-3">july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
